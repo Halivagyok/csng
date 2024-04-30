@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class=" text-slate-200  flex justify-center items-center min-h-screen bg-teal-700">
+        <div class="">
+            <div class=" flex flex-row justify-center bg-purple-600 py-6 rounded-t-lg text-slate-200 ">
+                <span>
+                    <div class="px-4">
+                        <input type="radio" name="duration" class="h45" value="h45" checked>
+                        <label for="h45">normál (45 min)</label>
+                    </div>
+                </span>
+                <span>
+                    <div class=" px-4">
+                        <input type="radio" name="duration" class="h40" value="h40">
+                        <label for="h40">rövidített (40 min)</label>
+                    </div>
+                </span>
+                <span>
+                    <div class="px-4">
+                        <input type="radio" name="duration" class="h35" value="h35">
+                        <label for="h35">rövidített (35 min)</label>
+                    </div>
+                </span>
+
+            </div>
+            <div class="  text-3xl bg-sky-800">
+                <div class="flex justify-center items-center py-2">
+                    <h1></h1>
+                </div>
+                <div class="info flex justify-center items-center py-5"></div>
+            </div>
+            <div class="bg-emerald-800 flex justify-center py-2 rounded-b-lg text-slate-200" onclick="refresh()">
+               Refresh
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
