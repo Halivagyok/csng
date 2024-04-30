@@ -38,11 +38,11 @@ function info() {
 document.querySelector(".info").innerHTML= info()
 
 function refresh(){
-
+    let most1 = getTime()
     let sel = document.querySelector("input[name='duration']:checked").value
     bellShedule = bellShedules[sel]
     console.log(sel, bellShedule);
-    document.querySelector("h1").innerHTML = getTime()
+    document.querySelector("h1").innerHTML = most1
     document.querySelector(".info").innerHTML= info()
     
 }
