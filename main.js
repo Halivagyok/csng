@@ -7,7 +7,7 @@ function getTime(){
     return ora + ":" + per
 }
 let most = getTime()
-let bellShedule = [ ]
+let bellShedule = bellShedules.h45
 document.querySelector("h1").innerHTML = most
 function info() {
     let cur = bellShedule.find(ez=> most >= ez.from && most <= ez.to)
@@ -38,9 +38,11 @@ function info() {
 document.querySelector(".info").innerHTML= info()
 
 function refresh(){
+
     let sel = document.querySelector("input[name='duration']:checked").value
     bellShedule = bellShedules[sel]
-    document.querySelector("h1").innerHTML = most
+    console.log(sel, bellShedule);
+    document.querySelector("h1").innerHTML = getTime()
     document.querySelector(".info").innerHTML= info()
     
 }
